@@ -1,0 +1,118 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #efefef;   
+}
+
+#grid-layout{
+    display: grid;
+    grid-template-areas:'menu menu menu'
+                        'nombre nombre nombre'
+                        'presentacion presentacion presentacion '
+                        'tecno tecno tecno'
+                        'java c python';
+
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#menu{
+    grid-area: menu;
+    min-width: 300px;
+    max-width: auto;
+    min-height: auto;
+    max-height: 70px;
+}
+
+#menu a{
+    display: inline-block;
+    text-decoration: none;   
+    color: gray;
+    padding-left: 10px;
+}
+
+#menu a:hover{
+    color: rgba(36, 37, 39, 1);
+}
+
+#menu nav{
+    min-width: 300px;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#inicio{
+    grid-area: nombre;
+    text-align: center;
+}
+
+.presentacion{
+    grid-area: presentacion;
+    text-align: justify;
+    padding: 0px 16px;
+    min-width: 300px;
+    max-width: auto;
+    max-height: 350px;
+}
+
+.tec{
+    grid-area: tecno;
+    text-align: center;
+}
+
+img{
+    width: 70px;
+}
+
+#python{
+    background-color:rgba(36, 37, 39, 1) ;
+    grid-area: python;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+#java{
+    background-color:rgba(36, 37, 39, 1) ;
+    grid-area: java;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+#c{
+    background-color:rgba(36, 37, 39, 1) ;
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+#grid-layout2{
+    display: grid;
+    grid-auto-rows: 15rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,400px),1fr)); 
+}
+
+.proyecto{
+    padding: 5px;
+    border-radius: 1rem;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: rgb(170, 164, 164);
+}
+
+footer{
+    margin-top: 60px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(36, 37, 39, 1);
+    color: #efefef;
+}
+
+
+
+
